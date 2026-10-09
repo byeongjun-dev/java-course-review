@@ -1,0 +1,117 @@
+project:
+  name: "Java RPG"
+  chapter: 4
+  topic: "제어문"
+  status: "TODO"
+
+goal:
+  description: "Chapter 3에서 만든 캐릭터 시스템에 전투 시스템 추가"
+
+monster:
+  status: "TODO"
+  requirements:
+    - "몬스터 이름을 String으로 저장"
+    - "몬스터 HP 저장"
+    - "몬스터 공격력 저장"
+    - "몬스터 생존 여부를 boolean으로 저장"
+
+if_else:
+  status: "TODO"
+  mission:
+    description: "캐릭터 HP에 따라 상태 출력"
+    conditions:
+      - "HP > 70 : 상태가 좋습니다."
+      - "HP > 30 : 부상을 입었습니다."
+      - "그 외 : 위험합니다!"
+
+switch:
+  status: "TODO"
+  mission:
+    description: "플레이어 행동 선택"
+    actions:
+      1: "공격"
+      2: "방어"
+      3: "회복"
+      4: "도망"
+
+for_loop:
+  status: "TODO"
+  mission:
+    description: "몬스터를 3번 연속 공격"
+    rules:
+      - "for문 사용"
+      - "공격할 때마다 몬스터 HP 감소"
+      - "HP 결과를 직접 하드코딩하지 않기"
+
+while_loop:
+  status: "TODO"
+  mission:
+    description: "몬스터가 죽을 때까지 전투"
+    rules:
+      - "while문 사용"
+      - "매 턴 몬스터 HP 감소"
+      - "몬스터 HP가 0 이하가 되면 전투 종료"
+      - "몬스터 처치 메시지 출력"
+
+break:
+  status: "TODO"
+  mission:
+    description: "위험한 상황에서 전투 종료"
+    condition: "플레이어 HP <= 20"
+    result:
+      - "도망 메시지 출력"
+      - "break로 반복문 종료"
+
+continue:
+  status: "TODO"
+  mission:
+    description: "특정 공격 실패 구현"
+    example: "3번째 공격은 빗나감"
+    rules:
+      - "공격 실패 메시지 출력"
+      - "continue 사용"
+      - "해당 턴에는 몬스터 HP 감소 금지"
+
+battle_result:
+  status: "TODO"
+  output:
+    - "캐릭터 정보"
+    - "캐릭터 능력치"
+    - "몬스터 정보"
+    - "현재 턴"
+    - "공격 결과"
+    - "남은 HP"
+    - "전투 종료 결과"
+
+chapter3_review:
+  use:
+    - "String"
+    - "int"
+    - "float"
+    - "boolean"
+    - "배열"
+    - "연산자"
+    - "문자열 포매팅"
+
+chapter4_practice:
+  must_use:
+    - "if / else"
+    - "switch"
+    - "for"
+    - "while"
+    - "break"
+    - "continue"
+
+rules:
+  - "아직 배우지 않은 문법은 가능하면 사용하지 않는다."
+  - "완성 코드를 찾아서 복사하지 않는다."
+  - "문법이나 메소드가 기억나지 않으면 강의나 문서를 참고해도 된다."
+  - "값을 직접 하드코딩하기보다 변수와 연산을 사용한다."
+  - "막힌 부분은 먼저 직접 고민한 뒤 질문한다."
+
+github:
+  commit_example: "feat: implement basic battle system"
+  readme:
+    - "Chapter 4에서 학습한 내용 기록"
+    - "추가한 전투 기능 기록"
+    - "구현하면서 어려웠던 점 기록"
